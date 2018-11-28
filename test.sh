@@ -4,11 +4,13 @@ r='\033[0;31m'
 g='\033[0;32m'
 w='\033[0;39m'
 
+program="sscc"
+
 try() {
     expected="$1"
     input="$2"
 
-    ./cell "${input}" > tmp.s
+    ./${program} "${input}" > tmp.s
     gcc -o tmp tmp.s
     ./tmp
     actual="$?"

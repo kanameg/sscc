@@ -1,5 +1,5 @@
 #
-# Makefile for 0cc
+# Makefile for sscc
 #
 CC=gcc
 CFLAGS=-Wall -std=c11 # -DCC0_DEBUG
@@ -7,13 +7,13 @@ SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 
 
-cell: $(OBJS)
+sscc: $(OBJS)
 	$(CC) -o $@ $(OBJS)
 
-$(OBJS): cell
+$(OBJS): sscc
 
-test: cell
+test: sscc
 	./test.sh
 
 clean:
-	rm -f cell *.o *~ tmp*
+	rm -f sscc *.o *~ tmp*

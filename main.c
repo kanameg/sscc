@@ -1,5 +1,9 @@
 /**
- * Cell C compiler
+   Sub Set C compiler
+   
+   This is sub set C compiler (sscc) which support C89 subset.
+   This compiler is made with very simple and fundamental technology 
+   for studying compiler technology.
  */
 
 #include <stdio.h>

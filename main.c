@@ -20,13 +20,24 @@ int main(int argc, char **argv) {
   
   char *p = argv[1];
 
+  /* tokenize program */
   tokenizer(p);
 
+  /* parsing tokens */
+  tp = 0;
+  Node *node = parse();
+
+  /* generate code */
+  generate(node);
+
   /* assembler main */
+  /*
   printf("	.globl	_main\n");
   printf("_main:\n");
-  printf("	movl	$%d, %%eax\n", tokens[0].value);
+  printf("	movl $%d, %%eax\n", tokens[0].value);
   printf("	retq\n");
+  */
+  
   
   return 0;
 }

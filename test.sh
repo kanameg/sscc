@@ -28,7 +28,7 @@ try 0 '0'
 try 128 '128'
 try 255 '255'
 
-echo '========== binary op'
+echo '========== binary operator'
 try 10 '6+4'
 try 10 '128 - 118'
 try 20 '128 - 118 + 10'

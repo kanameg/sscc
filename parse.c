@@ -26,7 +26,6 @@ Node *expr(void) {
   
   while (tokens[tp].type == '+' || tokens[tp].type == '-') {
     left = make_op_node(&tokens[tp++], left, number());
-    tp++;
   }
 
   return left;
@@ -40,8 +39,7 @@ Node *number(void) {
   Node *node;
   
   if (tokens[tp].type == TOKEN_NUMBER) {
-    node = make_number_node(&tokens[tp]);
-    tp++;
+    node = make_number_node(&tokens[tp++]);
   }
   else
     node = NULL;

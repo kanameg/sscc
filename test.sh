@@ -31,6 +31,8 @@ try 255 '255'
 echo '========== binary op'
 try 10 '6+4'
 try 10 '128 - 118'
+try 20 '128 - 118 + 10'
+try 15 '128 - 118 + 10 - 5'
 
 echo
 echo -e "${g}All test is OK${w}"

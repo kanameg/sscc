@@ -8,3 +8,28 @@ digit  : 0|1|2|3|4|5|6|7|8|9
 number : digit {digit}
 
 
+
+* 構文解析
+
+** 文法G0
+   数値のみ
+
+   Vn {}
+   Vt {number}
+
+
+** 文法G1
+   加減算を追加するためトークナイザを作成
+   
+   Vn {}
+   Vt {number, '+', '-'}
+   expr	 : number {'+' number}
+      	 | number {'-' number}
+
+
+  First(expr) = number
+  Follow(expr) = 
+
+** 
+	 
+

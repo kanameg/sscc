@@ -10,7 +10,7 @@ OBJS=$(SRCS:.c=.o)
 sscc: $(OBJS)
 	$(CC) -o $@ $(OBJS)
 
-$(OBJS): sscc
+$(OBJS): sscc.h
 
 test: sscc
 	./test.sh

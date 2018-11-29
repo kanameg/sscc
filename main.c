@@ -6,9 +6,8 @@
    for studying compiler technology.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include "sscc.h"
+
 
 /**
    main function
@@ -19,12 +18,14 @@ int main(int argc, char **argv) {
     return 1;
   }
   
-  int v = atoi(argv[1]);
+  char *p = argv[1];
+
+  tokenizer(p);
 
   /* assembler main */
   printf("	.globl	_main\n");
   printf("_main:\n");
-  printf("	movl	$%d, %%eax\n", v);
+  printf("	movl	$%d, %%eax\n", tokens[0].value);
   printf("	retq\n");
   
   return 0;

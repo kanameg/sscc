@@ -2,7 +2,6 @@
    Tokenizer functions
    
  */
-
 #include "sscc.h"
 
 int   tp = 0;      /* token index point */

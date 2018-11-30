@@ -8,9 +8,8 @@
 
 #include "sscc.h"
 
-
 /**
-   main function
+   include function
 */
 int main(int argc, char **argv) {
   if (argc != 2) {

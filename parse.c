@@ -1,5 +1,3 @@
-#include "sscc.h"
-
 /**
    This is a recursive-descent parser which make abstract syntax tree
    from program tokens array.

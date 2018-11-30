@@ -3,6 +3,7 @@
  */
 
 #include "sscc.h"
+#include "node.h"
 
 /**
    make number node

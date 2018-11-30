@@ -2,8 +2,8 @@
    Assembler code generator
  */
 
-#include "sscc.h"
 #include "reg.h"
+#include "sscc.h"
 
 
 /**

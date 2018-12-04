@@ -18,7 +18,7 @@ void tokenizer(char *s) {
       s++;
       continue;
     }
-
+    
     /* check if token is number */
     if (isdigit(*s)) {
       tokens[tp].type = TOKEN_NUMBER;

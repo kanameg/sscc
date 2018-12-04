@@ -11,10 +11,11 @@ enum {
 
 
 /**
-   token data type
+   token data structure
 */
 typedef struct token {
   int   type;   // type of token
+  int   id;     // token id
   int   value;  // token value
 } Token;
 
